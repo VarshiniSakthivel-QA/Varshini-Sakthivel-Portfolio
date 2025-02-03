@@ -1,59 +1,93 @@
-/* Experience Animation */
-#company {
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #004d7a, #008793, #00bf72, #a8eb12);
+    color: #fff;
     text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    color: #e94e77;
-    margin-bottom: 20px;
-    animation: fadeIn 2s;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+/* Container */
+#container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
 }
 
-@keyframes slideUp {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+/* Profile Photo */
+#profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+#profile-photo:hover {
+    transform: scale(1.1);
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+h2, h3 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+/* Contact Info */
+#contact-info {
+    margin-top: 20px;
+}
+
+#contact-info a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 10px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact-info a:hover {
+    color: #f7b733;
+}
+
+/* Experience Section */
+#experience {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    animation: slideIn 1s ease-in-out;
 }
 
 /* Projects */
 .project {
-    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    animation: slideUp 1.5s;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .project:hover {
     transform: scale(1.05);
 }
 
-.project h3 {
-    color: #4a90e2;
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.project p {
-    margin: 10px 0;
-}
-
-.project ul {
-    text-align: left;
-    list-style-type: disc;
-    margin-left: 20px;
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
