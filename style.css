@@ -1,155 +1,92 @@
-/* General reset and font settings */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: #0073e6;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-a:hover {
-  color: #005bb5;
+h1, h2, h3 {
+    color: #1a1a1a;
+    font-weight: bold;
 }
 
-/* Header Section */
-header {
-  background-color: #2c3e50;
-  color: white;
-  padding: 50px 0;
+section {
+    padding: 50px 0;
+    animation: fadeIn 2s ease-in;
 }
 
-header .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+.home {
+    background-color: #e9ecef;
+    text-align: center;
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+.tagline {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0;
 }
 
-header p {
-  font-size: 18px;
-  margin-bottom: 10px;
+a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-/* Work Experience Section */
-#experience {
-  padding: 50px 0;
-  background-color: #ecf0f1;
+a:hover {
+    text-decoration: underline;
 }
 
-#experience .container {
-  width: 80%;
-  margin: 0 auto;
+.work-experience {
+    background-color: #ffffff;
 }
 
-#experience h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+.project-item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#experience h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
+.project-item h3 {
+    color: #007bff;
 }
 
-#experience ul {
-  list-style: none;
-  padding: 0;
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
 }
 
-#experience li {
-  font-size: 16px;
-  margin-bottom: 15px;
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-#experience li strong {
-  font-weight: 500;
+.project-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
-/* Projects Section */
-#projects {
-  padding: 50px 0;
-  background-color: #34495e;
-}
-
-#projects .container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-#projects h2 {
-  font-size: 32px;
-  color: white;
-  margin-bottom: 30px;
-}
-
-.project {
-  background-color: #ecf0f1;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.project p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.project strong {
-  font-weight: 500;
-}
-
-/* Salesforce FSL Section */
-#salesforce {
-  padding: 50px 0;
-  background-color: #fff;
-}
-
-#salesforce .container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-#salesforce h2 {
-  font-size: 32px;
-  color: #2c3e50;
-  margin-bottom: 20px;
-}
-
-#salesforce h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
-#salesforce p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
